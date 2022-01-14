@@ -1621,6 +1621,32 @@ select {
 03. header
 *************************
 */
+.sec1 {
+    position: absolute !important;
+    width: 100%;
+    height: 910px;
+    position: relative;
+    /* background-color: #2c3783; */
+    background-image: url(/assets/img/asdad.png);
+    background-position: center center;
+    background-size: 105%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.sec1 .overlay {
+    background-image: url(/assets/img/overlay.png);
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .header__top {
 	position: relative;
 	padding-top: 6px;
@@ -8258,6 +8284,136 @@ select {
 .breadcrumb-item + .breadcrumb-item {
 	padding-left: 0;
 }
+
+/* client-section */
+
+.client-section{
+	padding: 100px 50px 100px 50px;
+  background-color: #040E56;
+  background-image: url(../images/home/overlay.png);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.client-section .side-over{
+  background-image: url(/assets/img/overlay-left.png);
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.5;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute
+
+}
+
+.client-section .container .row .client-heading .client-text h5{
+  color: #c2320e;
+  margin: 0 0 20px 0;
+  font-size: 30px;
+}
+
+.client-section .container .row .client-heading .client-text h1{
+  color: #f7f5f4;
+}
+
+.client-section .container .row .client-heading .client-slider .owl-carousel .item .item-img{
+	display: flex;
+	padding: 25px 0 0 0;
+}
+
+.client-section .container .row .client-heading .client-slider .owl-carousel .item .item-img img{
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	margin: 0 30px 0 0;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.client-section .container .row .client-heading .client-slider .owl-carousel .item .item-img .item-arrow .fa-quote-right{
+  margin: 0 0px 0 85px;
+  padding: 12px 0 0 0;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.owl-stage-outer {
+    -webkit-box-shadow: 9px 11px 14px 0 rgba(0,0,0,.1);
+    box-shadow: 9px 11px 14px 0 rgba(0,0,0,.1);
+}
+.client-section .container .row .client-heading .client-slider .owl-carousel .item {
+    background-color: #040E56;
+    padding: 30px;
+    padding-left: 60px;
+    position: relative;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    z-index: 1;
+}
+.client-heading .client-text h2 {
+	color: #fff;
+}
+.client-section .container .row .client-heading .client-slider .owl-carousel .item .item-text p{
+ color: #FFFFFF;
+ font-size: 15px;
+}
+
+.client-section .container .row .client-heading .client-slider .owl-carousel .item .item-img .side-text h3{
+color: #FFFFFF;
+}
+
+.client-section .container .row .client-heading .client-slider .owl-carousel .item .item-img .side-text p{
+  color: #FFFFFF;
+}
+
+.client-section .container .row .client-heading .client-slider .last-section{
+  margin: 50px 0 0 0;
+}
+
+.client-section .container .row .client-heading .client-slider .last-section p{
+  color: #FFFFFF;
+  font-size: 15px;
+}
+
+.client-section .container .row .client-image {
+    margin: -350px 0 0 0;
+}
+div#size-image .right-txt {
+    position: relative;
+    padding: 2rem;
+}
+section.client-section .side-text h3 {
+    font-size: 16px;
+}
+
+.client-section .container .row #size-image {
+  /* background: #054099;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px 10px #4856b1 */
+}
+
+.client-section .container .row .right-txt p, h4, h5{
+color: #FFFFFF;
+}
+
+.client-section .container .row .client-image img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+ /* client-section */
+
 /*
 *****
 17. faq
