@@ -1639,7 +1639,7 @@ a.mousestesti.smoothscroll, .mousesabout .mouse-icon, .mouseslider .mouse-icon {
 }
 .overlay.overlay-bg-theme {
     background-image: url(/assets/img/overlay-top.png);
-    /* background-position: center center; */
+    background-position: center center;
     background-size: cover;
     opacity: 1;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
