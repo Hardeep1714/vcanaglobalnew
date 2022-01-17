@@ -18,6 +18,10 @@
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/global.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
 <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -192,7 +196,7 @@
   </div>--> 
   </div>
   <!--Waves Container-->
-	<div class="wavess"><img src="assets/img/hero/wave.png" alt="wave" /></div>
+	<!-- <div class="wavess"><img src="assets/img/hero/wave.png" alt="wave" /></div> -->
   <!--<div>
     <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -279,8 +283,8 @@
 
   <div class="container">
       <div class="row">
-          <div class="col-md-6">
-              <div class="card-section">
+          <div class="col-md-12">
+              <div class="card-section wow animate__animated animate__bounce">
                   <div class="card-body">
                     <h5 class="card-title">About Us</h5>  
 
@@ -304,10 +308,9 @@
 </section>
 <section class="mission-section">
   <div class="container">
-    <div class="row">
-      <div class="col-md-2"></div>
+    <div class="row justify-content-center">
         <div class="col-md-5">
-                <div class="side-card">
+                <div class="side-card wow animate__animated animate__fadeInLeft" data-wow-duration="2s" data-wow-delay=".5s">
                     <div class="card-body">
                         <h2 class="card-title">Our Vision</h2>
                       <p class="card-text mb-0">
@@ -321,7 +324,7 @@
                </div>
 
          <div class="col-md-5">
-              <div class="side-right">
+              <div class="side-right wow animate__animated animate__fadeInRight" data-wow-duration="2s" data-wow-delay=".5s">
                 <div class="card-body">
                     <h2 class="card-title">Our Mission</h2>
                   <p class="card-text mb-0">
@@ -494,8 +497,8 @@
 
         </div>
         
-        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"> 
-          <div class="service-card">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">  
+          <div class="service-card"> 
               <div class="inner-box box box-res">
                 <div class="shape-one"></div>
                 <div class="shape-two"></div>
@@ -556,7 +559,7 @@
   </div>
          
          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"> 
-          <div class="service-card" style="height: 400px;">
+          <div class="service-card" style="height: 400px;">  
             <div class="card back-img">
               <div class="over-hover">
               </div>
@@ -591,7 +594,7 @@
    <div class="container">
      <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-       <div class="client-heading">
+       <div class="client-heading animate__animated animate__slideInLeft nimate__delay-5s">
         <div class="client-text">
           <h5>Our Clients</h5>
           <h2>What Our Client Say</h2>
@@ -693,11 +696,11 @@
           </div>
 
          <div class="client-image">
-           <img src="./assets/img/brunette-young-woman-touching-virtual-reality-head-MGDQ6WZ.jpg" alt="developer">
+           <img src="./assets/img/brunette-young-woman-touching-virtual-reality-head-MGDQ6WZ.jpg" class="img-shadow" alt="developer">
          </div>
     </div>
    </div>
-
+</div>
  </section>
 
 <!-- Client Section End -->
@@ -1191,25 +1194,108 @@
 
 </section>
 <!-- Testimonial start -->
+<section class="client-section-2">
 <div class="container-fluid p-0">
-  <div class="row align-items-center g-5 py-5">
+  <div class="row">
     <div class="col-10 col-sm-8 col-lg-6 position-relative">
       <img src="/assets/img/business-team-celebrating-with-raised-up-hands-.jpg" class="d-block img-fluid" alt="Bootstrap Themes" width="auto" height="500" loading="lazy">
       <div class="col-lg-3 position-absolute col-bg-clr">
+          <div class="service-heading testimonial">
+              <h5>Since 2019</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscin elit, 
+              sed do eiusmod tempor incididunt ut labore dolore magna aliqua</p>
+                <a href="#">Find Your Solutions<i class="fal fa-arrow-right i-sz"></i></a>
+          </div>
         </div>
     </div>
 
 
-    <div class="col-lg-6">
-      <h1 class="display-5 fw-bold lh-1 mb-3"></h1>
-      <p class="lead"></p>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 testimonial-right-bg">
+      <div class="client-heading text-center">
+       <div class="client-text">
+         <h1>What Our Client Say</h1>
+         <div class="testimonial-icon">
+         <i class="far fa-quote-right quote-right-sz"></i>
+        </div>
+            </div>
+
+            <div class="client-slider">
+             <div id="owl-carouse2" class="owl-carousel owl-theme">
+               <div class="item"> 
+                <div class="item-text">
+                 <p>
+               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+               Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+                 </p>
+                </div>
+
+                <div class="item-img">
+                 <img src="./assets/img/team-1.jpg" alt="client-1"> 
+                   <div class="side-text">
+                     <h3>Elsa Verina</h3>
+                     <p>Client</p>
+                   </div>
+
+                </div>
+            
+              </div>              
+
+               <div class="item"> 
+                 <div class="item-text">
+                   <p>
+                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                     Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+                       </p>
+                 </div>
+
+                 <div class="item-img">
+               <img src="./assets/img/team-3.jpg" alt="client-2"> 
+                 
+               <div class="side-text">
+                 <h3>Smasi Khan</h3>
+                 <p>Client</p>
+               </div>
+             
+               </div>
+             </div>
+
+
+
+               <div class="item"> 
+                 <div class="item-text">
+                   <p>
+                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                     Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+                       </p>
+                 </div>
+
+                 <div class="item-img">
+               <img src="./assets/img/team-4.jpg" alt="client-3"> 
+
+               <div class="side-text">
+                 <h3>Dyas Kardinal</h3>
+                  <p>Client</p>
+               </div>
+
+               </div>
+
+              
+              </div>
+           
+              </div>
+
+
+
+            </div>
+      </div>
     </div>
 
 
     </div>
   </div>
-</div>
-<!-- Testimonila end --> 
+  </section>
+<!-- Testimonil end --> 
+
 <!-- contact section end-->
 <!-- blog area start  -->
 <!-- <section class="blog-area blog-area-2 pt-120 pb-150" id="blog"> <img class="pattern" src="assets/img/about/pattern.png" alt="images-not_found" />
@@ -1401,6 +1487,29 @@
         }
     })
 	</script> 
+  <script>
+    $('#owl-carouse2').owlCarousel({
+      loop:true,
+      margin:10,
+      dots: false,
+      autoplay:true,
+      nav: false,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:1
+          },
+          900:{
+              items:1
+          },
+        1024:{
+              items:1
+          }
+      }
+  })
+</script>
 <script>
 	$(document).ready(function() {
 			  $('.nav-tabs > li > a').click(function(event) {
@@ -1470,5 +1579,9 @@
         })
         })
     </script>
+                  <script src="/assets/js/wow.js"></script>
+                  <script>
+                  new WOW().init();
+                  </script>
 </body>
 </html>

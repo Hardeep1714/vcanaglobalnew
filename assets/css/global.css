@@ -444,8 +444,12 @@ ul.tabs {
 .btn-style-one:hover::before {
 	left: -100%;
 }
+
 .btn-style-one:hover {
 	color: var(--white);
+    transform: scale(1.05)
+               translateY(-0.5rem);
+
 }
 .team-section {
 	padding: 290px 0px;

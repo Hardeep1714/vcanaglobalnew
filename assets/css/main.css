@@ -1626,7 +1626,7 @@ a.mousestesti.smoothscroll, .mousesabout .mouse-icon, .mouseslider .mouse-icon {
 .sec1 {
     position: absolute !important;
     width: 100%;
-    height: 910px;
+    height: 900px;
     position: relative;
     /* background-color: #2c3783; */
     background-image: url(/assets/img/asdad.png);
@@ -2594,6 +2594,9 @@ a.mousestesti.smoothscroll, .mousesabout .mouse-icon, .mouseslider .mouse-icon {
 04. hero
 *************************
 */
+.swiper-container {
+    margin-bottom: 0px !important;
+}
 .hero-area {
 	overflow: hidden;
 }
@@ -8293,7 +8296,7 @@ div#size-image {
 
 
 .about-section{
-    margin: 50px 0 50px 0;
+    /* margin: 50px 0 50px 0; */
     width: 100%;
     height: 90vh;
     position: relative;
@@ -8304,7 +8307,7 @@ div#size-image {
 }
 
 .over-lay{
-    height: 100%;
+    height: 75%;
     width: 100%;
     top: 0;
     left: 0;
@@ -8312,14 +8315,14 @@ div#size-image {
 }
 
  .about-section .about-theme{
-	background-image: url("https://ofiz.wpengine.com/wp-content/uploads/2019/08/why-us-fullwidth-bg.jpg");
+	background-image: url(/assets/img/building-bg.jpg);
     background-position: top center;
-    background-color: #380f05;
-    /* opacity: 0.7; */
+    /* background-color: #380f05; */
+    opacity: 0.9;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 } 
 .bg-overlay {
-	background-color: #000000;
+	/* background-color: #000000; */
     opacity: 0.7;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 	height: 100%;
@@ -8334,12 +8337,10 @@ div#size-image {
     padding: 30px 40px 10px;
     background: #FFFFFF;
     position: relative;
-    border-radius: 0px 0px 50px 0px;
-    -webkit-border-radius: 0px 0px 50px 0px;
-    -moz-border-radius: 0px 0px 50px 0px;
-    -ms-border-radius: 0px 0px 50px 0px;
-    -o-border-radius: 0px 0px 50px 0px;
-}
+    border-radius: 50px;
+	margin-top: -50px;
+	z-index: 1;
+	box-shadow: 0 2.5rem 2rem -2rem hsl(0deg 0% 0% / 40%);}
 
 .about-section .container .row .card-section .card-title{
     color: #06233f;
@@ -8347,14 +8348,18 @@ div#size-image {
     line-height: 35px;
     margin: 0 0 20px 0;
 }
+.img-shadow {
+	box-shadow: 0 2.5rem 2rem -2rem hsl(200 50% 20% / 40%);
 
+}
 .mission-section {
-    margin: -150px 0 0px 0;
+    margin: -350px 0 0px 0;
     position: relative;
 }
 
 
 .mission-section .container .row .side-card{
+	box-shadow: 0 1rem 2rem hsl(0deg 0% 0% / 25%);
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     padding: 30px;
     /* width: 33.5%; */
@@ -8382,6 +8387,7 @@ div#size-image {
 
 
 .mission-section .container .row .side-right{
+	box-shadow: 0 1rem 2rem hsl(0deg 0% 0% / 25%);
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     /* box-shadow: 10px -10px 15px -10px grey; */
     /* margin: 30px 30px 0 0; */
@@ -8389,11 +8395,8 @@ div#size-image {
     /* width: 33.5%; */
     background: #e94927;
     /* float: right; */
-    border-radius: 50px 0px 0px 0px;
-    -webkit-border-radius: 50px 0px 0px 0px;
-    -moz-border-radius: 50px 0px 0px 0px;
-    -ms-border-radius: 50px 0px 0px 0px;
-    -o-border-radius: 50px 0px 0px 0px;
+    border-radius: 0px 50px 0px 0px;
+
 }
 .pb-custom {
 	padding: 100px;
@@ -8440,6 +8443,13 @@ div#size-image {
 
 /* about-section */
 /* Testimonial Start*/
+section.client-section-2 .client-heading.text-center {
+    padding-top: 70px;
+}
+.testimonial-right-bg {
+	background-image: url(/assets/img/worldmap-Q676QDA.png);
+	background-size: cover;
+}
 .testimonial-img_ {
 	background-image: url("https://kit.baliniz.com/mindtech/wp-content/uploads/sites/8/2021/04/business-team-celebrating-with-raised-up-hands-.jpg");
     background-position: center center;
@@ -8447,10 +8457,93 @@ div#size-image {
     background-size: cover;
 }
 .col-bg-clr {
-    background: #000;
-    height: 200px;
-    width: 300px;
+    background: #040e56;
+    height: 250px;
+    width: 320px;
     bottom: 0;
+}
+.client-section-2 {
+    background-color: #040E56;
+    background-image: url(/assets/img/overlay.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.client-section-2 .container-fluid .row .client-heading .client-slider .owl-carousel .item .item-img {
+    display: block;
+	justify-content: center;
+}
+.client-section-2 .container-fluid .row .client-heading .client-slider .owl-carousel .item {
+    /* background-color: #040E56; */
+    padding: 20px 130px 0px;
+    position: relative;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    z-index: 1;
+}
+.client-section-2 .container-fluid .row .client-heading .client-slider .owl-carousel .item .item-text p {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 300;
+}
+section.client-section-2 .client-text h1 {
+	color: #fff;
+	margin-bottom: 40px;
+}
+section.client-section-2 .client-text {
+    /* margin-top: 60px; */
+}
+.client-section-2 .container-fluid .row .client-heading .client-slider .owl-carousel .item .item-img img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: 0 auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+	margin-top: 40px;
+}
+section.client-section-2 .side-text h3 {
+	margin-top: 10px;
+	font-size: 18px;
+}
+.client-section-2 .container-fluid .row .client-heading .client-slider .owl-carousel .item .item-img .side-text h3 {
+    color: #FFFFFF;
+	margin-bottom: 0;
+}
+.client-section-2 .container-fluid .row .client-heading .client-slider .owl-carousel .item .item-img .side-text p {
+    color: #FFFFFF;
+}
+.client-section-2 .container-fluid .row .client-heading .client-slider .owl-carousel .item .item-img .item-arrow .fa-quote-right {
+    margin: 0 0px 0 85px;
+    padding: 12px 0 0 0;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.service-heading.testimonial {
+    padding: 20px 30px 0;
+}
+.i-sz {
+    margin-left: 6px;
+}
+.testimonial-icon {
+    /* display: block; */
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    display: flex;
+	margin: 0 auto;
+	border-radius: 50px;
+}
+.quote-right-sz {
+    font-size: 30px;
 }
 /* Testimonial End */
 /* tab-section */
@@ -9037,6 +9130,9 @@ ul.para {
 .owl-stage-outer {
     -webkit-box-shadow: 9px 11px 14px 0 rgba(0,0,0,.1);
     box-shadow: 9px 11px 14px 0 rgba(0,0,0,.1);
+}
+.client-section-2 .owl-stage-outer {
+    box-shadow: none;
 }
 .client-section .container .row .client-heading .client-slider .owl-carousel .item {
     background-color: #040E56;
